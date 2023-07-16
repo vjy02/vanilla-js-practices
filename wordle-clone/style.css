@@ -1,0 +1,36 @@
+
+main{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+#wordle-guesses-count{
+    height: 10%;
+}
+
+#worlde-input{
+    height: 20%;
+}
+
+#wordle-guesses{
+    height: 70%;
+}
+
+.guess-wrapper{
+    display: flex;
+    flex-direction:row;
+}
+
+.guess-char{
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
