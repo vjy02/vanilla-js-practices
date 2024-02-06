@@ -1,0 +1,17 @@
+.hidden{
+    display:none;
+}
+
+
+details > summary{
+    list-style-type: "📄";
+}
+
+.folder{
+    list-style-type: "📁";
+}
+
+.folder:hover{
+    list-style-type: "📂";
+}
+
