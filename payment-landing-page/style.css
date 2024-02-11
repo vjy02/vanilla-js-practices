@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    font-family: Poppins;
+}
+
+main{
+    max-height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85vw;
+    margin: auto;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+nav{
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 85vw;
+}
+
+#hero-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#hero-content > h3{
+    color: #E9DCFF;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+#hero-content > h1{
+    color:#FFFF;
+    font-weight: 600;
+    font-size: 47px;
+    line-height: 1.2em;
+    margin-top: -0.6em;
+}
+
+button{
+    background-color: #E9DCFF;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+#hero > img{
+    align-self: flex-start;
+}
+
+#desktop-menu{
+    display: none;
+}
+
+#mobile-dropdown{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    left: 18%;
+    margin-left: -50px;
+    top: 20%;
+}
+
+#mobile-dropdown > h1{
+    font-weight: 400;
+    color: white;
+    width: 85vw;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 900px){
+    #mobile-menu{
+        display: none;
+    }
+
+    #desktop-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    #nav-links-group{
+        display: flex;
+        justify-content: space-between;
+        width: 55%;
+    }
+
+    #nav-links-group > h3{
+        color: white;
+        font-weight:400;
+    }
+
+    #nav-button-group{
+        display: flex;
+        gap: 20px;
+    }
+
+    #nav-button-group > button{
+        padding: 10px 25px;
+    }
+
+    #hero{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #hero-content{
+        width: 35%;
+        margin-top: 5em;
+    }
+
+    #hero-content > h1{
+        font-size: 55px;
+        margin-top: -0.3em;
+    }
+
+    
+    #hero > img{
+        margin-top: 6em;
+    }
+
+}
